@@ -1,0 +1,554 @@
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bigImg {
+    /*background-image: url(../image/artLife/bgc.jpg);*/
+    /*background-size: 100% 100%;*/
+    /*background-position: 100% 100%;*/
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+
+}
+.bigImg1{
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.bigImg1 > img{
+    width: 100%;
+    height: 100%;
+}
+
+.bigText {
+    width: 650px;
+    min-height: 60px;
+
+    margin-left: 100px;
+
+}
+
+.bigText1 {
+    float: left;
+    font-size: 45px;
+    margin-top: 80px;
+    color: white;
+}
+
+.bigText2 {
+    float: left;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 80px;
+    color: white;
+}
+.bigText3 {
+    width: 450px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 300px;
+
+}
+.bigText4{
+    font-size: 70px;
+    font-weight: bolder;
+    color: white;
+
+
+}
+
+/*艺局风格文字标题*/
+.artStyleIn {
+    font-size: 30px;
+    font-weight: bolder;
+
+    text-align: center;
+    padding: 20px;
+
+}
+
+/*艺局风格文字标题内容*/
+
+.artStyleInText {
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.artStyleInText > span {
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+/*选项卡*/
+.option {
+    background-color: #f8f8f8;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    margin: 15px;
+}
+
+.lion {
+    border: 1px grey dashed;
+    margin-top: 50px;
+    width: 80%;
+}
+
+.carouselTopLine {
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.carouselTopLineColor {
+    background-color: #ecf2f3;
+    width: 300px;
+    height: 120px;
+    font-weight: bolder;
+    float: left;
+}
+
+.carouselTopLineColor > div {
+    font-weight: bolder;
+    margin-left: 50px;
+}
+
+.aa {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 40px;
+    /*border: 1px red solid;*/
+}
+
+.carouselTopText1 {
+    font-size: 16px;
+    font-weight: bolder;
+    padding-left: 30px;
+}
+
+.carouselTopText2 {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.asd {
+    min-width: 768px;
+}
+
+.buy {
+    color: white;
+    background-color: #cf680a;
+    border: 2px #cf680a solid;
+    border-radius: 25px;
+    width: 180px;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+    cursor:pointer;
+    font-weight: bolder;
+}
+
+.buy1 {
+    color: #cf680a;
+    border: 2px #cf680a solid;
+    border-radius: 25px;
+    width: 180px;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+    margin-left: 20px;
+    cursor:pointer;
+    font-weight: bolder;
+}
+
+.buy1:hover {
+    color: white;
+    background-color: #cf680a;
+}
+
+.buy2 {
+    background-color: #cf680a;
+    color: white;
+    border: 2px #cf680a solid;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    float: right;
+    margin-right: 0;
+    cursor:pointer;
+    font-weight: bolder;
+
+}
+
+.buy2:hover {
+    color: white;
+    background-color: #cf680a;
+
+}
+
+.buyColor {
+    margin-left: 10%;
+    width: 80%;
+    /*border: 1px red solid;*/
+    height: 55px;
+}
+
+
+.halvingLine {
+    width: 80%;
+    text-align: center;
+    border: 1px grey solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    overflow: hidden;
+}
+
+.imgLong {
+    width: 80%;
+    margin-left: 10%;
+}
+.imgLongA1 {
+    width: 80%;
+    margin-left: 10%;
+    display: none;
+}
+
+.imgLong1 {
+    float: left;
+    width: 25% !important;
+    cursor:pointer;
+    height: 190px;
+    text-align: center;
+    line-height: 180px;
+}
+
+.imgLong1 > img {
+
+   max-height: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+
+
+/*11111111111111111111111*/
+
+.lunBoXiaoTu_1 {
+    position: absolute;
+    top: 130px;
+    width: 60px;
+    height: 50px;
+
+    margin-left: 120px;
+
+}
+
+.lunBoXiaoTu_2 {
+
+    position: absolute;
+    top: 80px;
+    width: 60px;
+    height: 50px;
+    z-index: 2;
+    margin-left: 480px;
+}
+
+.lunBoXiaoTu_3 {
+    position: absolute;
+    top: 80px;
+    width: 60px;
+    height: 50px;
+    z-index: 2;
+    margin-left: 420px;
+
+}
+
+.lunBoXiaoTu_4 {
+    position: absolute;
+    top: 110px;
+    width: 60px;
+    height: 50px;
+    z-index: 2;
+    margin-left: 490px;
+
+}
+
+/*222222222222222222222*/
+
+.b_lunBoXiaoTu_1{
+    position: absolute;
+    top: 80px;
+    width: 80px;
+    height: 60px;
+    display: block !important;
+    z-index: 2;
+    margin-left: 380px;
+
+}
+.b_lunBoXiaoTu_2 {
+
+    position: absolute;
+    top: 100px;
+    width: 80px;
+    height: 60px;
+    z-index: 2;
+    margin-left: 380px;
+
+}
+
+.b_lunBoXiaoTu_3 {
+    position: absolute;
+    top: 80px;
+    width: 80px;
+    height: 60px;
+    z-index: 2;
+    margin-left: 220px;
+
+}
+
+.b_lunBoXiaoTu_4 {
+    position: absolute;
+    top: 80px;
+    width: 80px;
+    height: 60px;
+    z-index: 2;
+    margin-left: 360px;
+
+}
+
+/*3333333333333333333333*/
+
+.c_lunBoXiaoTu_1{
+    position: absolute;
+    top: 80px;
+    width: 70px;
+    height: 80px;
+    display: block !important;
+    z-index: 2;
+    margin-left: 280px;
+
+}
+.c_lunBoXiaoTu_2 {
+
+    position: absolute;
+    top: 80px;
+    width: 70px;
+    height: 80px;
+    z-index: 2;
+    margin-left: 350px;
+
+}
+
+.c_lunBoXiaoTu_3 {
+    position: absolute;
+    top: 80px;
+    width: 70px;
+    height: 80px;
+    z-index: 2;
+    margin-left: 480px;
+
+}
+
+.c_lunBoXiaoTu_4 {
+    position: absolute;
+    top: 70px;
+    width: 70px;
+    height: 80px;
+    z-index: 2;
+    margin-left: 350px;
+
+}
+
+/*44444444444444*/
+
+.d_lunBoXiaoTu_1{
+    position: absolute;
+    top: 120px;
+    width: 70px;
+    height: 40px;
+    display: block !important;
+    z-index: 2;
+    margin-left: 370px;
+
+}
+.d_lunBoXiaoTu_2 {
+
+    position: absolute;
+    top: 150px;
+    width: 70px;
+    height: 40px;
+    z-index: 2;
+    margin-left: 365px;
+    border-bottom: 2px solid;
+    border-right: 2px grey solid;
+}
+
+.d_lunBoXiaoTu_3 {
+    position: absolute;
+    top: 140px;
+    width: 70px;
+    height: 40px;
+    z-index: 2;
+    margin-left: 440px;
+
+}
+
+.d_lunBoXiaoTu_4 {
+    position: absolute;
+    top: 70px;
+    width: 70px;
+    height: 40px;
+    z-index: 2;
+    margin-left: 365px;
+
+}
+
+/*55555555555555*/
+.e_lunBoXiaoTu_1{
+    position: absolute;
+    top: 100px;
+    width: 50px;
+    height: 40px;
+    display: block !important;
+    z-index: 2;
+    margin-left: 420px;
+
+}
+.e_lunBoXiaoTu_2 {
+
+    position: absolute;
+    top: 110px;
+    width: 50px;
+    height: 40px;
+    z-index: 2;
+    margin-left: 305px;
+
+}
+
+.e_lunBoXiaoTu_3 {
+    position: absolute;
+    top: 140px;
+    width: 50px;
+    height: 40px;
+    z-index: 2;
+    margin-left: 380px;
+
+}
+
+.e_lunBoXiaoTu_4 {
+    position: absolute;
+    top: 70px;
+    width: 70px;
+    height: 40px;
+    z-index: 2;
+    margin-left: 365px;
+
+}
+.buyPainting{
+    width: 100%;
+
+    overflow: hidden
+}
+.addBuyCar{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #cf680a;
+    background-color: white;
+    border: 2px #cf680a solid;
+    border-radius: 25px;
+    width: 100px;
+    text-align: center;
+    cursor:pointer
+}
+.addBuyCar:hover{
+    background-color: #cf680a;
+    color: white;
+}
+.buyButton{
+    float: left;
+    width: 25%;
+}
+.buyButtonBig{
+    width: 100%;
+
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+.imgXqBigBorder{
+    /*border: 1px solid red;*/
+    width: 80%;
+    margin-left: 10%;
+    height: 300px;
+    display: none;
+    border-top: 2px grey solid;
+    padding-top: 10px;
+}
+.imgXq{
+    float: left;
+    height: 100%;
+    width: 50%;
+    /*margin:0 auto;*/
+    /*margin-left: 2%;*/
+
+}
+.imgXq > img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.imgXqTextBigBorder{
+    float: left;
+    width: 46%;
+    margin-left: 2%;
+}
+.imgXqText1{
+    font-size: 14px;
+    font-weight: bolder;
+    padding: 15px;
+    border-bottom: 1px grey solid;
+}
+.ing767478 a{
+    color: black;
+    text-align: center;
+    font-size: 16px;
+}
+.ing767478{
+    padding: 15px;
+}
+.xxx{
+    font-size: 20px;
+    margin-left: 96%;
+}
