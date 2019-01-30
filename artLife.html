@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,maximum-scale=1.0">
+    <title>artLife</title>
+    <link rel="stylesheet" href="../comm/bootstrap3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/artLife.css">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        body {
+
+            background: #fff;
+            font: normal 12px/22px 宋体;
+            width: 100%;
+        }
+
+        img {
+            border: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        a:hover {
+            color: #1974A1;
+        }
+
+        /* slider */
+        .slider {
+            width: 100%;
+            min-width: 980px;
+            height: 450px;
+            position: relative;
+            overflow: hidden;
+            background: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .slider .bd {
+            width: 490px;
+            position: absolute;
+            left: 50%;
+            margin-left: -490px
+        }
+
+        .slider .bd li {
+            width: 780px;
+            overflow: hidden;
+            margin: 0 100px;
+        }
+
+        .bedroomPhotos {
+            display: block;
+            width: 780px;
+            height: 450px;
+
+        }
+
+        .slider .bd li div img {
+            width: 100%;
+            border-bottom: 2px solid;
+            border-right: 2px grey solid;
+
+        }
+
+        .slider .tempWrap {
+            overflow: visible !important
+        }
+
+        .slider .tempWrap ul {
+            margin-left: -980px !important;
+        }
+
+        .slider .hd {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            z-index: 1;
+            height: 8px;
+            bottom: 20px;
+            text-align: center;
+        }
+
+        .slider .hd li {
+            display: inline-block;
+            *display: inline;
+            zoom: 1;
+            width: 8px;
+            height: 8px;
+            line-height: 99px;
+            overflow: hidden;
+            background: url(../image/slider-btn.png) 0 -10px no-repeat;
+            margin: 0 5px;
+            cursor: pointer;
+            filter: alpha(opacity=60);
+            opacity: 0.6;
+        }
+
+        .slider .hd li.on {
+            background-position: 0 0;
+            filter: alpha(opacity=100);
+            opacity: 1;
+        }
+
+        .slider .pnBtn {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            width: 100%;
+            height: 450px;
+            cursor: pointer;
+        }
+
+        .slider .prev {
+            left: -50%;
+            margin-left: -490px;
+        }
+
+        .slider .next {
+            left: 50%;
+            margin-left: 490px;
+        }
+
+        .slider .pnBtn .blackBg {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 450px;
+            background: #000;
+            filter: alpha(opacity=50);
+            opacity: 0.5;
+        }
+
+        .slider .pnBtn .arrow {
+            display: none;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            width: 60px;
+            height: 450px;
+        }
+
+        .slider .pnBtn .arrow:hover {
+            filter: alpha(opacity=60);
+            opacity: 0.6;
+        }
+
+        .slider .prev .arrow {
+            right: 0;
+            background: url(../image/slider-arrow.png) -120px 0 no-repeat;
+            margin-top: 50px;
+        }
+
+        .slider .next .arrow {
+            left: 0;
+            background: url(../image/slider-arrow.png) 0 0 no-repeat;
+            margin-top: 50px;
+        }
+        .ing767478{
+            color: black;!important;
+           text-align: center;
+
+        }
+
+    </style>
+</head>
+<body style="margin: 0 ;padding: 0">
+<div class="bigImg">
+    <div class="bigImg1">
+        <img src="../image/artLife/bgc.jpg">
+    </div>
+    <div class="bigText">
+        <div class="bigText1">如何用</div>
+        <div class="bigText2">艺术</div>
+        <div class="bigText1">为家居生活</div>
+    </div>
+    <div class="bigText3">
+        <div class="bigText4">重焕新生？</div>
+    </div>
+</div>
+<!--艺局风格文字标题-->
+<div>
+    <div class="row">
+        <div class="artStyleIn col-sm-12">
+            艺居风格
+        </div>
+        <div class="artStyleInText col-sm-12">
+            充满设计的空间能将一切客观存在变成生动而独具灵魂的语言，再用感性或理性的口吻讲述每一位“居住者”的个性空间。<span>现代简约</span>似清风徐来，精致干练；
+        </div>
+        <div class="artStyleInText col-sm-12">
+            <span>北欧风情</span>在清雅之间流露浓郁人情；<span>工业风</span>是不加矫饰的自由粗狂；<span>中式古典</span>是似山如水的写意典雅；<span>日式和风</span>是简洁清新的都市禅意
+            ……不同的空间风格被
+        </div>
+        <div class="artStyleInText col-sm-12">
+            塑造出不同的性格，空荡的物理空间完成了“居住者”心理空间的延伸，一米阳光，悠然自得。
+        </div>
+    </div>
+</div>
+
+<!--点击框-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 option">现代简约</div>
+        <div class="col-md-2 option">北欧风情</div>
+        <div class="col-md-2 option">工业风格</div>
+        <div class="col-md-2 option">中式古典</div>
+        <div class="col-md-2 option">日式和风</div>
+    </div>
+</div>
+<!--虚线-->
+<div class="container lion"></div>
+
+
+<!--轮播介绍1-->
+
+
+<div class="carouselTopLine">
+    <div class="carouselTopLineColor">
+        <div class="aa">现代简约</div>
+        <div>______</div>
+
+    </div>
+    <div style="float: left">
+        <div class="carouselTopText1">
+            艺术效果：以简胜繁、艺术点睛
+        </div>
+        <div class="carouselTopText2">
+            现代简约风格依循20世纪初欧洲现代主义建筑大师Mies Vander Rohe提出的“Less is more”思想，在极致简化的同时
+        </div>
+        <div class="carouselTopText2">
+            注重质感要求，作品搭配建议极简为主，线条、色块元素的抽象作品，写意雅致的水墨作品等。
+        </div>
+    </div>
+</div>
+
+<!--轮播1-->
+
+<div class="slider">
+
+    <div class="bd">
+        <ul>
+            <li><a href="#"><img src="../image/artLife/11.jpg" class="bedroomPhotos"/>
+                <div class="lunBoXiaoTu_1">
+                    <img src="../image/artLife/25.jpg" id="img1">
+                </div>
+            </a></li>
+            <li><a href="#"><img src="../image/artLife/12.jpg" class="bedroomPhotos"/>
+                <div class="lunBoXiaoTu_2">
+                    <img src="../image/artLife/25.jpg" id="img2">
+                </div>
+
+            </a></li>
+            <li><a href="#"><img src="../image/artLife/13.jpg" class="bedroomPhotos"/>
+
+                <div class="lunBoXiaoTu_3">
+                    <img src="../image/artLife/25.jpg" id="img3">
+                </div>
+
+            </a></li>
+
+            <li><a href="#"><img src="../image/artLife/14.jpg" class="bedroomPhotos"/>
+
+                <div class="lunBoXiaoTu_4">
+                    <img src="../image/artLife/25.jpg" id="img4">
+                </div>
+
+            </a></li>
+
+
+        </ul>
+    </div>
+
+    <div class="hd">
+        <ul></ul>
+    </div>
+
+    <div class="pnBtn prev"><span class="blackBg"></span><a class="arrow" href="javascript:void(0)"></a></div>
+    <div class="pnBtn next"><span class="blackBg"></span><a class="arrow" href="javascript:void(0)"></a></div>
+
+</div>
+
+<!--套餐-->
+<div class="buyColor" id="buyColorA1">
+    <div class="buy" id="buy999" onclick="buy999()">
+        ¥999元套餐
+    </div>
+    <div class="buy1" id="buy3999" onclick="buy3999()">
+        ¥3999元套餐
+    </div>
+
+    <div class="buy2" id="purchasePlan" onclick="purchasePlan()">
+        购买套餐
+    </div>
+</div>
+
+
+<!--分割线-->
+<div class="halvingLine"></div>
+<h5 style="margin-left: 10%">提示：如点击作品图片，可放入上方场景</h5>
+
+<!--图片选择-->
+<div class="row imgLong" id="lunBoA1">
+    <h5>任选<span id="center">0</span>/2幅画</h5>
+    <div class="buyPainting">
+        <div class="col-lg-3 imgLong1" onclick="addImages25()" id="addImages25">
+            <img src="../image/artLife/25.jpg">
+            <div class="ing767478"><a href="/information/goodsInfo/1">作品详情</a></div>
+
+        </div>
+        <div class="col-lg-3 imgLong1" onclick="addImages21()" id="addImages21">
+            <img src="../image/artLife/21.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" onclick="addImages22()" id="addImages22">
+            <img src="../image/artLife/22.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" onclick="addImages23()" id="addImages23">
+            <img src="../image/artLife/23.jpg">
+
+        </div>
+    </div>
+
+    <!--购买按钮-->
+    <div class="buyButtonBig">
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar()" id="addCar">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar1()" id="addCar1">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar2()" id="addCar2">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar3()" id="addCar3">购买</div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row imgLongA1" id="lunBoA2">
+    <h5>任选<span id="center1">0</span>/2幅画</h5>
+    <div class="buyPainting">
+        <div class="col-lg-3 imgLong1" onclick="addImagesa1()" id="addImagesa1">
+            <img src="../image/artLife/a1.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" onclick="addImagesa2()" id="addImagesa2">
+            <img src="../image/artLife/a2.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" onclick="addImagesa3()" id="addImagesa3">
+            <img src="../image/artLife/a3.jpg">
+
+        </div>
+
+        <div class="col-lg-3 imgLong1" onclick="addImagesa4()" id="addImagesa4">
+            <img src="../image/artLife/a4.jpg">
+        </div>
+    </div>
+    <!--购买按钮-->
+    <div class="buyButtonBig">
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar4()" id="addCar4">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar5()" id="addCar5">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar6()" id="addCar6">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar7()" id="addCar7">购买</div>
+        </div>
+
+    </div>
+</div>
+
+
+<!--轮播介绍2-->
+
+
+<div class="carouselTopLine">
+    <div class="carouselTopLineColor">
+        <div class="aa">北欧风情</div>
+        <div>______</div>
+
+    </div>
+    <div style="float: left">
+        <div class="carouselTopText1">
+            艺术效果：柔和过度，浑然天成
+        </div>
+        <div class="carouselTopText2">
+            北欧风格重在人、自然与环境的有机结合，空间挂画以素色和中性色为主，在以线条和色块营造的稳定的空间元素中，看
+        </div>
+        <div class="carouselTopText2">
+            似漫不经心，但却能达到与居住者心情的无比契合。
+        </div>
+    </div>
+</div>
+
+<!--轮播-->
+
+<div class="slider">
+
+    <div class="bd">
+        <ul>
+            <li><a href="#"><img src="../image/artLife/31.jpg"
+                                 class="bedroomPhotos"/>
+                <div class="b_lunBoXiaoTu_1">
+                    <img src="../image/artLife/41.jpg">
+                </div>
+            </a></li>
+            <li><a href="#"><img src="../image/artLife/32.jpg" class="bedroomPhotos"/>
+                <div class="b_lunBoXiaoTu_2">
+                    <img src="../image/artLife/41.jpg">
+                </div>
+
+            </a></li>
+            <li><a href="#"><img src="../image/artLife/33.jpg" class="bedroomPhotos"/>
+
+                <div class="b_lunBoXiaoTu_3">
+                    <img src="../image/artLife/41.jpg">
+                </div>
+
+            </a></li>
+            <li><a href="#"><img src="../image/artLife/34.jpg" class="bedroomPhotos"/>
+
+                <div class="b_lunBoXiaoTu_4">
+                    <img src="../image/artLife/41.jpg">
+                </div>
+
+
+            </a></li>
+        </ul>
+    </div>
+
+    <div class="hd">
+        <ul></ul>
+    </div>
+
+    <div class="pnBtn prev"><span class="blackBg"></span><a class="arrow" href="javascript:void(0)"></a></div>
+    <div class="pnBtn next"><span class="blackBg"></span><a class="arrow" href="javascript:void(0)"></a></div>
+
+</div>
+
+<!--套餐-->
+<div class="buyColor">
+    <div class="buy" id="lunBo2Buy1" onclick="lunBo2Buy1()">
+        ¥3999元套餐
+    </div>
+    <div class="buy1" id="lunBo2Buy2" onclick="lunBo2Buy2()">
+        ¥9999元套餐
+    </div>
+
+    <div class=" buy2">
+        购买套餐
+    </div>
+</div>
+<!--分割线-->
+<div class="halvingLine"></div>
+<h5 style="margin-left: 10%">提示：如点击作品图片，可放入上方场景</h5>
+<!--图片选择-->
+<div class="row imgLong" id="lunBoB1">
+    <h5>任选<span id="center2">0</span>/2幅画</h5>
+    <div class="buyPainting">
+        <div class="col-lg-3 imgLong1" onclick="addImages41()" id="addImages41">
+            <img src="../image/artLife/41.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImages42" onclick="addImages42()">
+            <img src="../image/artLife/42.png">
+
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImages43" onclick="addImages43()">
+            <img src="../image/artLife/43.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImages44" onclick="addImages44()">
+            <img src="../image/artLife/44.jpg">
+
+        </div>
+    </div>
+    <!--购买按钮-->
+    <div class="buyButtonBig">
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar8()" id="addCar8">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar9()" id="addCar9">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar10()" id="addCar10">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar11()" id="addCar11">购买</div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="row imgLongA1" id="lunBoB2">
+    <h5>任选<span id="center3">0</span>/2幅画</h5>
+    <div class="buyPainting">
+        <div class="col-lg-3 imgLong1" onclick="addImagesb1()" id="addImagesb1">
+            <img src="../image/artLife/b1.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImagesb2" onclick="addImagesb2()">
+            <img src="../image/artLife/b2.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImagesb3" onclick="addImagesb3()">
+            <img src="../image/artLife/b3.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImagesb4" onclick="addImagesb4()">
+            <img src="../image/artLife/b4.jpg">
+
+        </div>
+    </div>
+    <div class="buyButtonBig">
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar12()" id="addCar12">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar13()" id="addCar13">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar14()" id="addCar14">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar15()" id="addCar15">购买</div>
+        </div>
+
+    </div>
+</div>
+
+
+<!--轮播介绍3-->
+
+
+<div class="carouselTopLine">
+    <div class="carouselTopLineColor">
+        <div class="aa">工业风格</div>
+        <div>______</div>
+
+    </div>
+    <div style="float: left">
+        <div class="carouselTopText1">
+            艺术效果：打破乏味，张扬个性
+        </div>
+        <div class="carouselTopText2">
+            工业金属的装修风格多以“原生态”为基调，质朴、暴露的结构，或工业照明灯具都是其鲜明的代表元素，空间配以具有
+        </div>
+        <div class="carouselTopText2">
+            大胆色调、个性符号等元素的抽象绘画，以艺术气息的营造，令原本冷漠裸露的墙壁富有生命的温度。
+        </div>
+    </div>
+</div>
+
+<!--轮播-->
+<div class="slider">
+
+    <div class="bd">
+        <ul>
+            <li><a href="#"><img src="../image/artLife/51.jpg" class="bedroomPhotos"/>
+                <div class="c_lunBoXiaoTu_1">
+                    <img src="../image/artLife/61.jpg">
+                </div>
+            </a></li>
+            <li><a href="#"><img src="../image/artLife/52.jpg" class="bedroomPhotos"/>
+                <div class="c_lunBoXiaoTu_2">
+                    <img src="../image/artLife/61.jpg">
+                </div>
+
+            </a></li>
+            <li><a href="#"><img src="../image/artLife/53.jpg" class="bedroomPhotos"/>
+
+                <div class="c_lunBoXiaoTu_3">
+                    <img src="../image/artLife/61.jpg">
+                </div>
+
+            </a></li>
+            <li><a href="#"><img src="../image/artLife/54.jpg" class="bedroomPhotos"/>
+
+                <div class="c_lunBoXiaoTu_4">
+                    <img src="../image/artLife/61.jpg">
+                </div>
+
+
+            </a></li>
+        </ul>
+    </div>
+
+    <div class="hd">
+        <ul></ul>
+    </div>
+
+    <div class="pnBtn prev"><span class="blackBg"></span><a class="arrow" href="javascript:void(0)"></a></div>
+    <div class="pnBtn next"><span class="blackBg"></span><a class="arrow" href="javascript:void(0)"></a></div>
+
+</div>
+<!--套餐价钱-->
+<div class="buyColor">
+    <div class="buy" id="lunBo3Buy1" onclick="lunBo3Buy1()">
+        ¥999元套餐
+    </div>
+    <div class="buy1" id="lunBo3Buy2" onclick="lunBo3Buy2()">
+        ¥3999元套餐
+    </div>
+
+    <div class=" buy2">
+        购买套餐
+    </div>
+</div>
+<!--分割线-->
+<div class="halvingLine"></div>
+<h5 style="margin-left: 10%">提示：如点击作品图片，可放入上方场景</h5>
+<!--图片选择-->
+<div class="row imgLong" id="lunBoC1">
+    <h5>任选<span id="center4">0</span>/2幅画</h5>
+    <div class="buyPainting">
+        <div class="col-lg-3 imgLong1" id="addImages61" onclick="addImages61()">
+            <img src="../image/artLife/61.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImages62" onclick="addImages62()">
+            <img src="../image/artLife/62.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImages63" onclick="addImages63()">
+            <img src="../image/artLife/63.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImages64" onclick="addImages64()">
+            <img src="../image/artLife/64.jpg">
+        </div>
+    </div>
+    <div class="buyButtonBig">
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar16()" id="addCar16">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar17()" id="addCar17">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar18()" id="addCar18">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar19()" id="addCar19">购买</div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row imgLongA1" id="lunBoC2">
+    <h5>任选<span id="center5">0</span>/2幅画</h5>
+    <div class="buyPainting">
+        <div class="col-lg-3 imgLong1" onclick="addImagesc1()" id="addImagesc1">
+            <img src="../image/artLife/c1.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImagesc2" onclick="addImagesc2()">
+            <img src="../image/artLife/c2.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImagesc3" onclick="addImagesc3()">
+            <img src="../image/artLife/c3.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImagesc4" onclick="addImagesc4()">
+            <img src="../image/artLife/c4.jpg">
+
+        </div>
+    </div>
+
+
+    <div class="buyButtonBig">
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar20()" id="addCar20">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar21()" id="addCar21">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar22()" id="addCar22">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar23()" id="addCar23">购买</div>
+        </div>
+
+    </div>
+</div>
+
+
+<!--轮播介绍4-->
+
+<div class="carouselTopLine">
+    <div class="carouselTopLineColor">
+        <div class="aa">中式古典</div>
+        <div>______</div>
+
+    </div>
+    <div style="float: left">
+        <div class="carouselTopText1">
+            艺术效果：行云流水，意境雅致
+        </div>
+        <div class="carouselTopText2">
+            中式古典风格的装修多以考究的空间位置、精雕细琢的木质家具为主，依据中国传统美学的“形”、“神”特征，打造古
+        </div>
+        <div class="carouselTopText2">
+            朴、贵气又不失亲切的空间感受，挂画风格以淡雅为主，写意山水画或书法作品，浓、重、淡、清，别具一格。
+        </div>
+    </div>
+</div>
+
+<!--轮播-->
+<div class="slider">
+
+    <div class="bd">
+        <ul>
+            <li><a href="#"><img src="../image/artLife/71.jpg" class="bedroomPhotos"/>
+                <div class="d_lunBoXiaoTu_1">
+                    <img src="../image/artLife/81.jpg" style="width: 100%;height: 100%">
+                </div>
+            </a></li>
+            <li><a href="#"><img src="../image/artLife/75.jpg" class="bedroomPhotos"/>
+                <div class="d_lunBoXiaoTu_2">
+                    <img src="../image/artLife/81.jpg" style="width: 100%;height: 100%">
+                </div>
+
+            </a></li>
+            <li><a href="#"><img src="../image/artLife/101.jpg" class="bedroomPhotos"/>
+
+                <div class="d_lunBoXiaoTu_3">
+                    <img src="../image/artLife/81.jpg" style="width: 100%;height: 100%">
+                </div>
+
+            </a></li>
+            <li><a href="#"><img src="../image/artLife/74.jpg" class="bedroomPhotos"/>
+
+                <div class="d_lunBoXiaoTu_4">
+                    <img src="../image/artLife/81.jpg" style="width: 100%;height: 100%">
+                </div>
+
+
+            </a></li>
+        </ul>
+    </div>
+
+    <div class="hd">
+        <ul></ul>
+    </div>
+
+    <div class="pnBtn prev"><span class="blackBg"></span><a class="arrow" href="javascript:void(0)"></a></div>
+    <div class="pnBtn next"><span class="blackBg"></span><a class="arrow" href="javascript:void(0)"></a></div>
+
+</div>
+<!--套餐-->
+<div class="buyColor">
+    <div class="buy" id="lunBo4Buy1" onclick="lunBo4Buy1()">
+        ¥3999元套餐
+    </div>
+    <div class="buy1" id="lunBo4Buy2" onclick="lunBo4Buy2()">
+        ¥9999元套餐
+    </div>
+
+    <div class=" buy2">
+        购买套餐
+    </div>
+</div>
+<!--分割线-->
+<div class="halvingLine"></div>
+<h5 style="margin-left: 10%">提示：如点击作品图片，可放入上方场景</h5>
+<!--图片选择-->
+<div class="imgLong" id="lunBoD1">
+    <h5>任选<span id="center6">0</span>/2幅画</h5>
+    <div class="buyPainting">
+        <div class="col-lg-3 imgLong1" id="addImages81" onclick="addImages81()">
+            <img src="../image/artLife/81.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImages85" onclick="addImages85()">
+            <img src="../image/artLife/85.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImages83" onclick="addImages83()">
+            <img src="../image/artLife/d5.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImages84" onclick="addImages84()">
+            <img src="../image/artLife/84.jpg">
+
+        </div>
+    </div>
+    <div class="buyButtonBig">
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar24()" id="addCar24">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar25()" id="addCar25">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar26()" id="addCar26">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar27()" id="addCar27">购买</div>
+        </div>
+
+    </div>
+</div>
+<div class="imgLongA1" id="lunBoD2">
+    <h5>任选<span id="center7">0</span>/2幅画</h5>
+    <div class="buyPainting">
+        <div class="col-lg-3 imgLong1" id="addImagesd1" onclick="addImagesd1()">
+            <img src="../image/artLife/d1.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImagesd2" onclick="addImagesd2()">
+            <img src="../image/artLife/d2.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImagesd3" onclick="addImagesd3()">
+            <img src="../image/artLife/d3.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImagesd4" onclick="addImagesd4()">
+            <img src="../image/artLife/d5.jpg">
+
+        </div>
+
+    </div>
+    <div class="buyButtonBig">
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar28()" id="addCar28">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar29()" id="addCar29">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar30()" id="addCar30">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar31()" id="addCar31">购买</div>
+        </div>
+
+    </div>
+</div>
+
+<!--轮播介绍5-->
+
+
+<div class="carouselTopLine">
+    <div class="carouselTopLineColor">
+        <div class="aa">日式和风</div>
+        <div>______</div>
+
+    </div>
+    <div style="float: left">
+        <div class="carouselTopText1">
+            艺术效果：简洁清新，都市禅意
+        </div>
+        <div class="carouselTopText2">
+            日式和风整体以淡雅、禅意为主，无论是偏重原木的色调，还是平易近人的简洁设计，都是对原始固有美态的秉承。挂画
+        </div>
+        <div class="carouselTopText2">
+            风格建议以植物等富有生命内容为主，色调清新素雅，或配以主色突出的画面，给心灵以置身森林的舒畅。
+        </div>
+    </div>
+</div>
+
+<!--轮播-->
+<div class="slider">
+
+    <div class="bd">
+        <ul>
+            <li><a href="#"><img src="../image/artLife/72.jpg" class="bedroomPhotos"/>
+                <div class="e_lunBoXiaoTu_1">
+                    <img src="../image/artLife/91.jpg" style="width: 100%;height: 100%">
+                </div>
+            </a></li>
+            <li><a href="#"><img src="../image/artLife/73.jpg" class="bedroomPhotos"/>
+                <div class="e_lunBoXiaoTu_2">
+                    <img src="../image/artLife/91.jpg" style="width: 100%;height: 100%">
+                </div>
+
+            </a></li>
+            <li><a href="#"><img src="../image/artLife/76.jpg" class="bedroomPhotos"/>
+
+                <div class="e_lunBoXiaoTu_3">
+                    <img src="../image/artLife/91.jpg" style="width: 100%;height: 100%">
+                </div>
+
+            </a></li>
+
+        </ul>
+    </div>
+
+    <div class="hd">
+        <ul></ul>
+    </div>
+
+    <div class="pnBtn prev"><span class="blackBg"></span><a class="arrow" href="javascript:void(0)"></a></div>
+    <div class="pnBtn next"><span class="blackBg"></span><a class="arrow" href="javascript:void(0)"></a></div>
+
+</div>
+<!--套餐-->
+<div class="buyColor">
+    <div class="buy" id="lunBo5Buy1" onclick="lunBo5Buy1()">
+        ¥1999元套餐
+    </div>
+    <div class="buy1" id="lunBo5Buy2" onclick="lunBo5Buy2()">
+        ¥3999元套餐
+    </div>
+
+    <div class=" buy2">
+        购买套餐
+    </div>
+</div>
+<!--分割线-->
+<div class="halvingLine"></div>
+<h5 style="margin-left: 10%">提示：如点击作品图片，可放入上方场景</h5>
+<!--图片选择-->
+<div class="row imgLong" id="lunBoE1">
+    <h5>任选<span id="center8">0</span>/2幅画</h5>
+    <div class="buyPainting">
+        <div class="col-lg-3 imgLong1" id="addImages91" onclick="addImages91()">
+            <img src="../image/artLife/91.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImages92" onclick="addImages92()">
+            <img src="../image/artLife/92.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImages93" onclick="addImages93()">
+            <img src="../image/artLife/93.jpg">
+
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImages94" onclick="addImages94()">
+            <img src="../image/artLife/94.jpg">
+
+        </div>
+
+    </div>
+    <div class="buyButtonBig">
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar32()" id="addCar32">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar33()" id="addCar33">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar34()" id="addCar34">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar35()" id="addCar35">购买</div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row imgLongA1" id="lunBoE2">
+    <h5>任选<span id="center9">0</span>/2幅画</h5>
+    <div class="buyPainting">
+        <div class="col-lg-3 imgLong1" id="addImagese1" onclick="addImagese1()">
+            <img src="../image/artLife/e1.jpg">
+            <div class="addBuyCar">购买</div>
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImagese2" onclick="addImagese2()">
+            <img src="../image/artLife/e2.jpg">
+            <div class="addBuyCar">购买</div>
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImagese3" onclick="addImagese3()">
+            <img src="../image/artLife/e3.jpg">
+            <div class="addBuyCar">购买</div>
+        </div>
+        <div class="col-lg-3 imgLong1" id="addImagese4" onclick="addImagese4()">
+            <img src="../image/artLife/e4.jpg">
+            <div class="addBuyCar">购买</div>
+        </div>
+
+    </div>
+    <div class="buyButtonBig">
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar36()" id="addCar36">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar37()" id="addCar37">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar38()" id="addCar38">购买</div>
+        </div>
+        <div class="buyButton">
+            <div class="addBuyCar" onclick="addCar39()" id="addCar39">购买</div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="../comm/jQuery/jquery-3.3.1.js"></script>
+<script src="../js/artLife.js"></script>
+
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="../js/superslide.2.1.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+
+
+        /* 鼠标悬停箭头按钮显示 */
+        $(".slider").hover(function () {
+            $(this).find(".arrow").stop(true, true).fadeIn(300)
+        }, function () {
+            $(this).find(".arrow").fadeOut(300)
+        });
+
+        /* 滚动切换 */
+        $(".slider").slide({
+            titCell: ".hd ul",
+            mainCell: ".bd ul",
+            effect: "leftLoop",
+            autoPlay: true,
+            vis: 3,
+            autoPage: true,
+            trigger: "click"
+        });
+
+    });
+
+
+</script>
+</body>
+</html>
