@@ -1,0 +1,1130 @@
+body {
+    margin: 0;
+    padding: 0;
+    /*overflow: Scroll;*/
+    /*overflow-x:hidden*/
+}
+
+ul, ol, li {
+    list-style-type: none !important;
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* todo 轮播*/
+#carousel-example-generic img {
+    width: 100%;
+    height: auto;
+}
+
+.item:last-of-type img {
+    width: 100%;
+    height: auto;
+}
+
+/* todo 展示区域样式*/
+.NeiRong {
+    margin: 80px auto;
+    width: 100%;
+    max-width: 1180px;
+}
+
+.item{
+    border: none!important;
+}
+
+
+.title {
+    text-align: left;
+    margin-bottom: 40px;
+    height: 46px;
+    line-height: 46px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.title h2 {
+    letter-spacing: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    color: black;
+    margin: 0 40px 0 0;
+    padding: 10px 5px;
+}
+
+.title span {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.title div:first-of-type {
+    margin-left: 28.6% !important;
+}
+
+.Tabs {
+    display: inline-block;
+    font-size: 20px;
+    width: 102px;
+    height: 46px;
+    text-align: center;
+    z-index: 20;
+    cursor: pointer;
+    margin-left: 22px;
+}
+
+.Tabs:hover {
+    border: 1px solid #dddddd;
+    border-bottom: 1px solid white;
+}
+
+.active {
+    border: 1px solid #dddddd;
+    border-bottom: 1px solid white;
+}
+
+/* todo 选项卡*/
+.TagCardBox {
+    width: 100%;
+    overflow: hidden;
+    display: none;
+}
+.TagCardBox:nth-child(2){
+    display: block;
+}
+
+.TagCard {
+    float: left;
+    position: relative;
+    word-spacing: normal;
+    margin-right: 20px;
+    width: 280px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px 0 #dddddd;
+    margin-bottom: 20px;
+}
+
+.TagCard:last-of-type {
+    margin-right: 0 !important;
+}
+
+.TagCard_img {
+    width: 280px;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+}
+
+.TagCard_img:hover img {
+    transform: scale(1.05);
+}
+
+.TagCard_img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;
+}
+
+.introduce_box {
+    width: 280px;
+    height: 120px;
+    display: table-cell;
+    color: #666;
+    font-size: 12px;
+    text-align: left;
+    padding: 0 20px;
+    vertical-align: middle;
+    line-height: 18px;
+}
+
+.introduce_box a {
+    color: #666;
+    text-decoration: none;
+}
+
+.introduce_box h3 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.introduce_box h4 {
+    display: inline;
+    font-weight: 500;
+    color: #666;
+}
+
+.introduce_box p {
+    color: #000;
+    font-weight: 600;
+    text-align: left;
+}
+
+.leftJianTou {
+    display: inline-block;
+    height: 0;
+    margin-right: 7px;
+    width: 0;
+    border: 7px solid #000;
+    border-left: 0;
+    border-bottom: 6px solid rgba(0, 0, 0, 0);
+    border-top: 6px solid rgba(0, 0, 0, 0);
+    vertical-align: middle;
+}
+
+#change {
+    display: inline-block;
+    margin-left: 0 !important;
+}
+
+.NewImageBox {
+    overflow: hidden;
+    width: 100%;
+}
+
+.NewImageBoxLeft {
+    float: left;
+    overflow: hidden;
+}
+
+.NewImageBoxRight {
+    float: left;
+    overflow: hidden;
+}
+
+.NewImageStrong {
+    float: left;
+    position: relative;
+    width: 280px;
+    height: 280px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.NewImageStrong img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.introduce {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    transition: all 0.4s;
+}
+
+.NewImageStrong:hover .introduce {
+    opacity: 1;
+}
+
+.NewImageStrong:hover img {
+    transform: scale(1.05);
+}
+
+.introduce p {
+    margin-bottom: 0;
+}
+
+.introduce p:first-of-type {
+    margin-top: 35%;
+}
+
+.NewImageSmall {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin-right: 20px;
+    /*margin-top: 20px;*/
+}
+
+.NewImageSmall img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.NewImageSmall:hover .introduce {
+    opacity: 1;
+}
+
+.NewImageSmall:hover img {
+    transform: scale(1.05);
+}
+
+.NewImageSmall .introduce p:first-of-type {
+    margin-top: 24%;
+}
+
+.NewImageSmall:nth-of-type(4),
+.NewImageSmall:nth-of-type(8) {
+    margin-right: 0 !important;
+}
+
+.MarTop20 {
+    margin-top: 20px !important;
+}
+
+/* todo 筛选*/
+.screen {
+    display: block;
+    width: 100%;
+    background-color: #444;
+    height: 300px;
+    position: relative;
+}
+
+#screen {
+    width: 100%;
+    max-width: 1180px;
+    padding: 40px 0;
+    margin: 0 auto;
+}
+
+.screenTitle {
+    height: 42px;
+    line-height: 42px;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: #ffffff;
+    margin-bottom: 48px;
+}
+
+.screen form label select {
+    padding: 0 20px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: #333333;
+    width: 200px;
+    height: 44px;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+.MoreGou {
+    margin-top: 48px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    color: #eeeeee;
+}
+
+.MoreGou a {
+    color: #ffffff;
+    margin: 0 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.Go {
+    font-size: 40px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #1f1f1f;
+    width: 27%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    height: 300px;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}
+
+.BgBlue {
+    background-color: #CF680A;
+    height: 300px;
+    width: 0;
+    transition: all 0.4s;
+}
+
+.text1 {
+    transition: all 0.4s;
+    text-align: right;
+    width: 90px;
+    height: 100px;
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.Go:hover .BgBlue {
+    width: 100%;
+}
+
+.Go:hover .text1 {
+    right: -90px;
+}
+
+/* todo 专题*/
+.SPECIAL {
+    position: relative;
+    width: 100%;
+    margin-bottom: 100px;
+    font-size: 0;
+    display: block;
+    user-select: none;
+}
+
+.title1 {
+    height: 100px;
+    text-align: center;
+}
+
+.prev {
+    float: left;
+    cursor: pointer;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.prev span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    border-left: solid 1px #000;
+    border-bottom: solid 1px #000;
+}
+
+.SPECIAL h2 {
+    letter-spacing: 3px;
+    margin: 0;
+    line-height: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    color: #000;
+}
+
+.next {
+    float: right;
+    cursor: pointer;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.next span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+    border-right: solid 1px #000;
+    border-bottom: solid 1px #000;
+}
+
+.SPECIALBox {
+    white-space: normal;
+    overflow: hidden;
+    width: 110%;
+    height: 380px;
+    font-size: 0;
+    position: relative;
+    /*transition: all 0.3s;*/
+}
+
+.SPECIALCalSet {
+    width: auto;
+    height: 380px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    margin-left: 0;
+    /*transition: all 0.6s;*/
+}
+
+.SPECIALCal {
+    width: 320px;
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+    /*overflow: hidden;*/
+    display: inline-block;
+    margin-right: 15px;
+    user-select: none;
+    /*transition: all 0.3s;*/
+}
+
+.SPECIALCal img {
+    width: 440px;
+    height: 380px;
+    position: absolute;
+    top: 0;
+    left: -60px;
+    border: 0;
+    /*transition: all 0.3s;*/
+}
+
+.Box {
+    padding-left: 0;
+    width: 100%;
+    height: 380px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*transition: all 0.3s;*/
+}
+
+.Box h3 {
+    width: 320px;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    color: #fff;
+    max-height: 145px;
+    white-space: normal;
+}
+
+.Box p {
+    width: 320px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 90px;
+    font-size: 14px;
+    line-height: 20px;
+    max-height: 220px;
+    color: #fff;
+    white-space: normal;
+}
+
+/*.SPECIALCalSet:hover {*/
+    /*margin-left: -60px;*/
+/*}*/
+
+/*.SPECIALCal:hover {*/
+    /*width: 440px !important;*/
+/*}*/
+
+/*.SPECIALCal:hover img {*/
+    /*left: 0;*/
+/*}*/
+
+/*.SPECIALCal:hover .Box {*/
+    /*padding-left: 60px;*/
+/*}*/
+
+/* todo 艺术家*/
+.ARTISTS {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.title2 {
+    text-align: left;
+    margin-bottom: 40px;
+    height: 46px;
+    line-height: 46px;
+}
+
+.title2 h2 {
+    letter-spacing: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    color: #000;
+    margin-right: 34px;
+}
+
+.title2 a {
+    display: inline-block;
+    width: 180px;
+    text-align: center;
+    line-height: 38px;
+    cursor: pointer;
+    vertical-align: middle;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #CF680A;
+    box-sizing: border-box;
+    color: #CF680A;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.title2 a:hover {
+    background-color: #CF680A;
+    color: white;
+}
+
+.ARTISTBox {
+    width: 100%;
+    height: 320px;
+}
+
+.curArtist {
+    width: 450px;
+    height: 320px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+
+.curArtist img {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.curArtist:hover img {
+    transform: scale(1.3);
+}
+
+.news_content {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.news_content h3 {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    color: #fff;
+    position: absolute;
+    bottom: 120px;
+    padding: 0 20px;
+}
+
+.news_content_text {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.75;
+    color: #fff;
+    overflow: hidden;
+    height: 84px;
+    position: absolute;
+    bottom: 18px;
+    width: 410px;
+    padding: 0 20px;
+}
+
+.moreArtist {
+    width: 679px;
+    height: 320px;
+    border-left: 1px solid #d8d8d8;
+    margin-left: 24px;
+    float: left;
+    padding-left: 25px;
+}
+
+.moreArtist > p {
+    height: 20px;
+    line-height: 20px;
+}
+
+.Artist {
+    width: 210px;
+    height: 280px;
+    float: right;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 7px;
+}
+
+.info {
+    height: 35px;
+    width: 80px;
+    left: 50%;
+    position: absolute;
+    top: 220px;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #000;
+    margin-left: -50px;
+}
+
+.info p:nth-child(1) {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    text-align: center;
+    color: #000;
+}
+
+.info p:nth-child(2) {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    text-align: center;
+    color: #000;
+}
+
+.artworks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 210px;
+    height: 210px;
+    cursor: pointer;
+}
+
+.artworks img {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.artworks img:nth-child(1) {
+    box-shadow: -4px 2px 6px 0 rgba(0, 0, 0, 0.5);
+    top: 10px;
+    left: 10px;
+    z-index: 3;
+}
+
+.artworks img:nth-child(2) {
+    opacity: 0.6;
+    z-index: 2;
+}
+
+.artworks img:nth-child(3) {
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.Artist:nth-child(3) > .info {
+    top: 20px !important;
+    border: 0 !important;
+    border-bottom: 1px solid #000 !important;
+}
+
+.Artist:nth-child(3) .artworks {
+    position: absolute;
+    top: 120px;
+    left: 0;
+}
+
+.artworks:hover img:nth-child(1) {
+    top: 32px;
+    left: 32px;
+}
+
+.artworks:hover img:nth-child(2) {
+    top: 15px;
+    left: 15px;
+}
+
+.INSIGHTS {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 570px;
+    max-width: 1180px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.title3 {
+    text-align: left;
+    margin-bottom: 40px;
+    height: 46px;
+    line-height: 46px;
+}
+
+.title3 h2 {
+    letter-spacing: 3px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    color: #000000;
+    margin-right: 40px;
+}
+
+.more {
+    display: inline-block;
+    cursor: pointer;
+    color: #003569;
+    margin-top: 11px;
+}
+
+.INSIGHTBox {
+    width: 100%;
+}
+
+.INSIGHT {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    float: left;
+}
+
+.INSIGHT_img {
+    width: 580px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.INSIGHT_img img {
+    display: block;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.INSIGHT_img:hover img {
+    transform: scale(1.05);
+}
+
+.INSIGHT h3 {
+    margin-top: 20px;
+    text-align: center;
+    height: 33px;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    color: #000000;
+}
+
+.line {
+    display: block;
+    margin: 20px auto;
+    width: 80px;
+    height: 0;
+    border-bottom: 1px solid #000;
+}
+
+.INSIGHTJieSha {
+    display: block;
+    width: 540px;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 25px;
+    text-align: justify;
+    color: #000;
+    overflow-wrap: break-word;
+}
+
+/* todo 为什么选择SUmi*/
+.WhYus {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 900px;
+    max-width: 1180px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.title4 {
+    text-align: center;
+    height: 46px;
+    line-height: 46px;
+}
+
+.title4 h2 {
+    letter-spacing: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    color: #000;
+}
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+    position: relative;
+    top: 0;
+}
+
+.ClearFix {
+    display: block;
+    overflow: hidden;
+}
+
+.ClearFix li {
+    float: left;
+    width: 33.33%;
+    min-height: 236px;
+    text-align: center;
+}
+
+.ClearFix li > div {
+    display: inline-block;
+    width: 280px;
+    padding: 0 0 40px 0;
+    border-bottom: 2px solid #eee;
+}
+
+.ClearFix li > div img {
+    display: inline;
+    width: 140px;
+}
+
+.strong {
+    font-size: 30px;
+    font-weight: 400;
+    display: block;
+    margin: 30px 0;
+    padding: 3px 0;
+}
+
+.strong:after {
+    font-weight: 600;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 30px;
+    content: '';
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: #000;
+    transition: all, 0.4s;
+}
+
+.strong:before {
+    font-weight: 600;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 30px;
+    content: '';
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: #000;
+    transition: all, 0.4s;
+}
+
+.ClearFix li:hover .strong:before {
+    margin: 0 20px 0 40px !important;
+    width: 8px;
+    height: 8px;
+}
+
+.ClearFix li:hover .strong:after {
+    margin: 0 40px 0 20px !important;
+    width: 8px;
+    height: 8px;
+}
+
+.content p {
+    font-size: 16px;
+    margin: 0;
+    padding: 3px 0;
+    text-align: center;
+}
+
+.Img {
+    margin-top: 60px;
+    display: table;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.FLeft {
+    position: relative;
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+
+.FLeft > img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    right: -40px;
+    top: 160px;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.FRight {
+    padding-left: 60px;
+    padding-right: 108px;
+    box-sizing: border-box;
+    background-color: #000;
+    width: 50%;
+    height: 400px;
+    float: right;
+}
+
+.ArtYouWant {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 55px;
+    text-align: justify;
+}
+
+.line1 {
+    height: 0;
+    width: 80px;
+    border-top: 1px solid #fff;
+    margin: 30px 0;
+}
+
+.Content {
+    margin-top: -3px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    text-align: justify;
+    color: #ffffff;
+    top: 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.FRight a {
+    font-size: 14px;
+    margin-top: 70px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*todo AsFeaTurEdin*/
+.AsFeaTurEdin {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 160px;
+    max-width: 1180px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.title5 {
+    text-align: center;
+    height: 46px;
+    line-height: 46px;
+}
+
+.title5 h2 {
+    letter-spacing: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    color: #000000;
+}
+
+.ContentBox {
+    height: 40px;
+    width: 100%;
+    padding: 60px 40px 0 40px;
+    box-sizing: border-box;
+}
+
+.ContentBox img {
+    margin-right: 50px;
+    height: 35px;
+    display: inline;
+}
+
+.ContentBox img:last-of-type {
+    margin: 0 !important;
+}
